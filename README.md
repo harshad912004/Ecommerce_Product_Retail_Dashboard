@@ -14,7 +14,7 @@ This is an Excel-based interactive dashboard analyzing product sales, customer p
 ![Dashboard Screenshot](EPRD.png)
 
 ## 📥 Download
-- [📊 Excel Dashboard (.xlsx)](Ecommerce Product Review Dashboard.xlsx)
+- Ecommerce Product Review Dashboard.xlsx
 
 ---
 
