@@ -16,7 +16,8 @@ This is an Excel-based interactive dashboard analyzing product sales, customer p
 ## 📥 Download
 - Ecommerce Product Review Dashboard.xlsx
 
----
-
-Built with ❤️ by Harshad  
+## 📥 Author  
+**Harshad Dhongade**  
 *MCA Student | Aspiring Data Analyst*
+
+---
