@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Product Retail Dashboard | Harshad Dhongade</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #f97316;
+      --bg-start: #0f172a;
+      --bg-end: #1e293b;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      color: #f1f5f9;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 0 auto 60px;
+    }
+
+    header {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    h1 {
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    p.lead {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .actions {
+      margin: 18px 0 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    a.button,
+    button.button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background-color: var(--accent);
+      color: #102030;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    a.button:hover,
+    button.button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+    }
+
+    .preview {
+      margin: 30px auto;
+      background: #0f172a;
+      padding: 26px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      text-align: left;
+    }
+
+    .preview h2 {
+      color: var(--accent);
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+    }
+
+    .preview img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #263242;
+      display: block;
+    }
+
+    .summary {
+      margin: 28px 0;
+      text-align: left;
+      background: #111827;
+      padding: 22px;
+      border-radius: 10px;
+      color: #d1d5db;
+      border-top: 4px solid #f97316;
+    }
+
+    .summary h3 {
+      color: #f97316;
+      margin-top: 0;
+    }
+
+    .summary ul {
+      margin-left: 1.05rem;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding: 30px 0;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    footer a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .no-print {
+      display: inline-block;
+    }
+
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+
+      .preview,
+      .summary {
+        box-shadow: none;
+        border-radius: 6px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .actions {
+        gap: 8px;
+      }
+
+      .preview {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="pdfContent">
+    <header>
+      <h1>E-commerce Product Retail Dashboard</h1>
+      <p class="lead">
+        A comprehensive Excel dashboard designed to analyze sales, profit, and performance across product categories and
+        countries.
+        Built using <strong>Excel, Power Query, and Pivot Charts</strong> to enable data-driven business insights.
+      </p>
+      <div class="actions no-print">
+        <a href="Ecommerce Product Review Dashboard.xlsx" download class="button">Download Dashboard (.xlsx)</a>
+        <a href="https://www.linkedin.com/in/harshad-dhongade" target="_blank" class="button">Connect on LinkedIn</a>
+        <button id="downloadPdfBtn" class="button no-print">Download Case Study (PDF)</button>
+      </div>
+    </header>
+
+    <section class="preview" id="previewSection">
+      <h2>Dashboard Preview</h2>
+      <img src="EPRD.png" alt="E-commerce Product Retail Dashboard Preview" />
+    </section>
+
+    <section class="summary">
+      <h3>Project Overview</h3>
+      <p><strong>Objective:</strong> To create an interactive Excel dashboard providing a unified view of sales data,
+        enabling stakeholders to monitor performance and identify profitable product categories.</p>
+
+      <p><strong>Problem:</strong> The company’s data was fragmented across regions and files, making it difficult to
+        track category-level sales, profitability, and seasonal performance trends.</p>
+
+      <p><strong>Approach:</strong></p>
+      <ul>
+        <li>Collected and cleaned transactional data using <strong>Power Query</strong></li>
+        <li>Designed KPIs for revenue, profit margin, and product category performance</li>
+        <li>Developed interactive visualizations with <strong>Pivot Tables</strong> and slicers</li>
+        <li>Created automated refresh workflows to reduce manual reporting time</li>
+      </ul>
+
+      <p><strong>Key Insights:</strong></p>
+      <ul>
+        <li>Electronics generated <strong>42% of total revenue</strong></li>
+        <li>Accessories achieved the <strong>highest profit margin (36%)</strong></li>
+        <li>Sales spiked during <strong>November–December</strong> (holiday season)</li>
+        <li>Top-performing regions: <strong>USA, Canada, and Germany</strong></li>
+      </ul>
+
+      <p><strong>Recommendations:</strong></p>
+      <ul>
+        <li>Focus marketing spend on high-margin categories</li>
+        <li>Bundle low-performing items to boost turnover</li>
+        <li>Leverage seasonal demand through Q4 promotions</li>
+      </ul>
+
+      <p><strong>Outcome:</strong> Reduced manual reporting by <strong>70%</strong> and improved visibility into
+        product-level profitability, empowering the management team to make faster, data-driven decisions.</p>
+
+      <p><strong>Tools & Skills:</strong> Excel | Power Query | Power Pivot | Data Visualization | Business Intelligence
+        | Reporting Automation</p>
+    </section>
+  </main>
+
+  <footer class="no-print">
+    <p>© 2025 <strong>Harshad Dhongade</strong> — Data Analyst | MCA Student</p>
+    <p><a href="https://github.com/harshad912004" target="_blank">View Full Portfolio</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script>
+    document.getElementById('downloadPdfBtn').addEventListener('click', async function () {
+      const btn = this;
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = 'Preparing PDF...';
+      const element = document.getElementById('pdfContent');
+      const hiddenElements = document.querySelectorAll('.no-print');
+      hiddenElements.forEach(el => { el.style.visibility = 'hidden'; });
+      const opt = {
+        margin: [8, 8, 8, 8],
+        filename: 'Ecommerce_Product_Retail_Dashboard_CaseStudy.pdf',
+        image: { type: 'jpeg', quality: 0.95 },
+        html2canvas: { scale: 2, useCORS: true, logging: false, allowTaint: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] }
+      };
+      try {
+        await html2pdf().set(opt).from(element).save();
+      } catch (err) {
+        console.error('PDF generation error:', err);
+        alert('PDF generation failed. Please try printing as PDF manually.');
+      } finally {
+        hiddenElements.forEach(el => { el.style.visibility = ''; });
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+
+</html>
