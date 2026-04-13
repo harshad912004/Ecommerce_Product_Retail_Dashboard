@@ -108,7 +108,7 @@ MIT License - See LICENSE file for details
 **Harshad Dhongade**
 - 💼 [LinkedIn](https://www.linkedin.com/in/harshad-dhongade)
 - 🐙 [GitHub](https://github.com/harshad912004)
-- 📧 harshad.dhongade@example.com
+- 📧 [E-mail](harshaddhongade9124@gmail.com)
 
 ## 🆘 Need Help?
 

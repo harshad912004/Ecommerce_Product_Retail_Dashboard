@@ -102,4 +102,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Last Updated**: 2025
+**Last Updated**: 2026
